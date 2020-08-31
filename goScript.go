@@ -12,7 +12,9 @@ func main() {
 	fmt.Println("Simple Shell")
 	fmt.Println("------------")
 	
-	for {
+	active := true
+	
+	for active {
 		fmt.Print("-> ")
 		text, _ := reader.ReadString('\n')
 		text = strings.Replace(text, "\r\n", "", -1)
